@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    background: url('https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w0Mzc0NDd8MHwxfHNlYXJjaHwxMHx8dGVjaHxlbnwwfHx8fDE3MjI3MDMzODh8MA&ixlib=rb-4.0.3&q=85&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450');
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px; /* Espaço adicional para compensar a barra de navegação fixa */
+}
+
+
+
+#hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: ;}
+
+
+#hero p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+
+.cta-button {
+    background: #e8491d;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.content-section {
+    padding: 60px 20px;
+    padding-top: 80px;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#curso ul {
+    list-style: none;
+}
+
+#curso ul li{
+    padding: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    margin-bottom: 20 px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*responsive*/
+
+@media (max-width: 760px) {
+    header .container{
+        flex-direction: column;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+
+}
+
+#hero p {
+    font-size: 1.2em;
+}
+
+header nav ul{
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav ul li{
+    margin-left: 0;
+    margin-bottom: 10px;
+}
